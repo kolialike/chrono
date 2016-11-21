@@ -1,0 +1,261 @@
+#header
+	+pie-clearfix
+.header-top
+	background: #30242b
+	padding: 30px 0px 27px
+	.logo
+		display: inline-block
+		vertical-align: bottom
+	.search
+		position: relative
+		display: inline-block
+		vertical-align: bottom
+		width: 491px
+		margin: 6.5px 0px
+		font-size: 0
+		line-height: 0
+		margin-left: 42px
+	input[type="search"]
+		border: none
+		outline: none
+		height: 45px
+		width: 395px
+		padding: 17px 14px 12px 45px
+		padding-right: 30px
+		+box-sizing(border-box)
+		background-color: #fff
+		font-size: 13px
+		color: #30242b
+		line-height: 15px
+		+border-radius(4px 0px 0px 4px)
+		+transition(0.2)
+		vertical-align: middle
+		background-image: image-url("search.png") 
+		background-repeat: no-repeat
+		background-position: 15px center
+		&:focus
+			+transition(0.2)
+			background-color: #fbfbfb
+			+placeholder
+				+opacity(0)
+		+placeholder
+			font-size: 13px
+			color: #30242b
+			line-height: 15px
+			+opacity(0.7)
+	.search-submit
+		// position: absolute
+		// right: 0
+		// top: 0
+		
+		display: inline-block
+		vertical-align: middle
+		&:before
+			+font-icon("search-new")
+			position: absolute
+			color: #fff
+			right: 0
+			top: 12px
+			font-size: 16px
+			left: 0
+			bottom: 0
+			z-index: 1
+			pointer-events: none
+		input[type="submit"]
+			position: relative
+			border: none
+			+border-radius(0px 4px 4px 0px)
+			height: 45px
+			width: 95px
+			background: #b4337f
+			padding: 14px 0px 15px
+			outline: none
+			// background: transparent
+			// height: 100%
+			// width: 30px
+			cursor: pointer
+			color: #fff
+			font-size: 15px
+			line-height: 20px
+	.language
+		float: right
+		margin-top: 32px
+		padding: 12px 20px 10px
+		+border-radius(4px)
+		background: #392b33
+		cursor: pointer
+		+transition(0.3s)
+		&:hover
+			background: rgba(#b4337f, 1)
+			a
+				&.active
+					background: rgba(#ffffff, 0.15)
+		a 
+			display: inline-block
+			padding: 6px 8px 6px
+			+border-radius(4px)
+			line-height: 14px
+			font-size: 14px
+			text-transform: uppercase
+			color: #fff
+			margin-right: 10px
+			// font-weight: bold
+			// &:hover
+				// font-weight: 400
+				// background: rgba(#4f444a, 0.57)
+			&:last-child
+				margin-right: 0
+			&.active
+				background: rgba(#4f444a, 0.57)
+
+
+	.contact-us
+		float: right
+		margin-right: 45px
+		margin-top: 49px
+		font-size: 14px
+		line-height: 16px
+		color: #92848c
+		border-bottom: 1px dotted rgba(#92848c, 0.45)
+		&:hover
+			color: #fff
+			border-bottom: 1px dotted rgba(#92848c, 0)
+.header-bottom
+	+pie-clearfix
+	background: #f1f0f0
+	+box-shadow(0px 1px 13px 0px rgba(95,80,89,0.3))
+	.header-bottom-l
+		float: left
+		font-size: 0
+		line-height: 0
+		li 
+			display: inline-block
+			margin: 17px 0px 15px
+			padding: 5px 25px
+			border-right: 1px solid rgba(#bfbfbf, 0.5)
+			&:last-child
+				border: none
+		a 
+			font-size: 16px
+			line-height: 20px
+			color: #5e4d57
+			display: inline-block
+			text-transform: uppercase
+			&:hover
+				color: #241a20
+
+	.header-bottom-r
+		float: right
+		font-size: 0
+		line-height: 0
+		a
+			display: inline-block
+			color: #30242b
+			font-size: 14px
+			line-height: 16px
+			letter-spacing: 0.08em
+		.MyChronoCash-container
+			position: relative
+			display: inline-block
+			vertical-align: top
+			padding: 0 30px
+			margin-top: 24px
+			&.open
+				.MyChronoCash
+					&:after
+						transform: rotate(-135deg)
+						top: 7px
+				.MyChronoCash-item
+					+opacity(1)
+					padding: 20px					
+					max-height: 500px
+		.MyChronoCash
+			color: #b4337f
+			// position: relative
+			padding-right: 15px
+			&:before
+				+font-icon("people")
+				display: inline-block
+				vertical-align: baseline
+				margin-right: 10px
+				color: rgba(#ba5991, 0.3)
+				font-size: 16px
+			&:after
+				content: ""
+				display: inline-block
+				position: absolute
+				right: 28px
+				top: 4px
+				transform: rotate(45deg)
+				width: 5px
+				height: 5px
+				border: 1px solid
+				border-color:  transparent #bb508c #bb508c  transparent
+				margin-left: 10px
+				+transition(0.3s)
+		.MyChronoCash-item
+			position: absolute
+			top: 40px
+			left: 0
+			right: 0
+			width: 100%
+			max-height: 0
+			padding: 0 20px
+			+opacity(0)
+			overflow: hidden
+			+transition(0.5s)
+			box-sizing: border-box
+			z-index: 2
+			background: #fff
+			+box-shadow(0px 1px 5px 0px rgba(95,80,89,0.45))
+			a 
+				display: block
+				border-bottom: 1px solid rgba(#ececec, 0.5)
+				color: #61565c
+				padding: 13px 10px 10px
+				font-size: 12px
+				line-height: 14px
+				&:before
+					display: inline-block
+					margin-right: 12px
+					color: #61565c
+					font-size: 13px
+					vertical-align: middle
+				&:hover
+					color: #b5528c
+					border-bottom: 1px solid rgba(#b5528c, 0.5)
+					&:before
+						color: #b5528c
+			.list
+				&:before
+					+font-icon("list")
+					font-size: 15px
+			.diskette
+				&:before
+					+font-icon("diskette")
+			.eye
+				&:before
+					+font-icon("eye")
+					font-size: 17px
+			.arrow-back
+				&:before
+					+font-icon("arrow-back")
+					font-size: 17px
+		.fav
+			// margin-left: 38px
+			padding: 24px 20px 21px
+			background: rgba(#e0e0e0, 0.5)
+			&:before
+				+font-icon("favorite")
+				display: inline-block
+				vertical-align: baseline
+				margin-right: 10px
+				color: #aba7aa
+				font-size: 16px
+			span 
+				color: #b4337f
+				margin-left: 5px
+
+	
+
+

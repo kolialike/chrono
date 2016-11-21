@@ -1,0 +1,618 @@
+.swiper-container
+	width: 100%
+	height: 380px
+	margin-left: auto
+	margin-right: auto
+.swiper-slide
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+.gallery-top
+	height: 380px
+	width: 100%
+	.swiper-slide
+.gallery-thumbs
+	height: 170px
+	box-sizing: border-box
+	padding: 43.5px 60px
+.gallery-thumbs .swiper-slide
+	width: 81px
+	height: 81px
+	// opacity: 0.4
+.gallery-thumbs .swiper-slide-active
+	opacity: 1
+	border: 1px solid #c0c0c0
+
+.link-style
+	display: inline-block
+	font-size: 14px
+	line-height: 15px
+	color: #a4236e
+	border-bottom: 1px dotted rgba(#a4236e, 0.45)
+	&:hover
+		border-bottom: 1px dotted transparent
+
+
+.pages
+	margin-top: 40px
+	margin-bottom: 23px
+	font-size: 0
+	line-height: 0
+	background: #fbfbfb
+	a 
+		display: inline-block
+		vertical-align: top
+		padding: 10px 25px 8px
+		// +border-radius(0px 2px 2px 0px)
+		background: #f5f5f5
+		+box-shadow(inset 7px 0px 14px -11px rgba(57, 57, 57, 0.62))
+		font-size: 13px
+		line-height: 16px
+		color: #7b6f6f
+		&:first-child
+			+box-shadow(inset 3px 0px 14px -5px rgba(57, 57, 57, 0))
+		&:last-child
+			background: #ba5991
+			color: #fbfbfb
+			pointer-events: none
+
+.main-content-container
+	background: #fff
+	+box-shadow(0px 4px 13px -3px rgba(0, 0, 0, 0.35))
+	+pie-clearfix
+	.main-slider
+		float: left
+		width: 600px
+	.auction-sale
+		float: right
+		width: 580px
+
+.slider-auction-sale
+	+pie-clearfix
+	border-bottom: 1px solid rgba(#272326, 0.25)
+
+.auction-sale
+	h3
+		display: block
+		font-size: 24px
+		line-height: 32px
+		color: #3b3b3b
+	.auction-sale-top
+		padding: 30px 40px 20px
+		background: #f7f7f7
+	.available-now
+		display: block
+		font-size: 15px
+		color: #488e46
+		line-height: 20px
+		margin-top: 8px
+		&:before
+			+font-icon("check")
+			display: inline-block
+			margin-right: 8px
+			font-size: 15px
+			vertical-align: baseline
+	.price
+		color: #2a2a2a
+		font-size: 16px
+		line-height: 18px
+		strong
+			font-weight: bold
+	.bids
+		color: #a4236e
+		font-size: 14px
+		line-height: 16px		
+		display: inline-block
+		border-bottom: 1px dotted rgba(#a4236e, 0.45)
+		margin-top: 15px
+		&:hover
+			border-bottom: 1px dotted transparent
+	.timer-sell
+		background: #fef4d5
+		padding: 22px 40px 20px
+		position: relative
+	.timer
+		float: right
+
+.sell-buy
+	+pie-clearfix
+	.sell-buy-l
+		float: left
+		+box-sizing(border-box)
+		width: 50%
+		min-height: 209px
+		padding: 25px 35px 15px
+		background: #f9f8f3
+		.buy-price
+			display: none
+	label
+		span
+			display: block
+			color: #55534c
+			font-size: 14px
+			line-height: 16px
+			margin-bottom: 10px
+		input 
+			border: 1px solid #ebebeb
+			background: #fff
+			+border-radius(3px)
+			height: 40px
+			padding: 12px 10px 11px
+			box-sizing: border-box
+			display: block
+			width: 100%
+			color: #848484
+			font-size: 14px
+			line-height: 14px
+			+placeholder 
+				color: #8f8f8f
+				font-size: 14px
+				line-height: 14px
+	input[type="submit"]
+		+border-radius(3px)
+		display: block
+		margin-top: 20px
+		width: 100%
+		text-transform: uppercase
+		border: none
+		font-size: 16px
+		color: #fff
+		line-height: 20px
+		height: 40px
+		padding: 12px 10px 11px
+		background: #a4236e
+	.automatic-bid
+		text-align: center
+		a 
+			display: inline-block
+			text-align: center
+			font-size: 14px
+			line-height: 15px
+			color: #a4236e
+			border-bottom: 1px dotted rgba(#a4236e, 0.45)
+			margin-top: 15px
+			&:hover
+				border-bottom: 1px dotted transparent
+	.sell-buy-r
+		float: right
+		+box-sizing(border-box)
+		width: 50%
+		min-height: 209px
+		padding: 25px 35px 15px
+		background: #fdfaee
+	.buy-price
+		display: block
+		box-sizing: border-box
+		padding: 26px 0 20px
+		background: #fef7df
+		color: #666666
+		text-align: center
+		font-size: 18px
+		line-height: 20px
+		strong
+			color: #2a2a2a
+	.buy-seller
+		font-size: 15px
+		color: #928e80
+		// display: block
+		margin-bottom: 10px
+		line-height: 1.2
+		display: none
+	.buy-it-now
+		display: block
+		height: 40px
+		padding: 12px 10px 11px
+		box-sizing: border-box
+		text-transform: uppercase
+		background: #5e9b5c
+		margin-top: 20px
+		color: #fff
+		font-size: 16px
+		line-height: 20px
+		text-align: center
+		+border-radius(3px)
+	.buy-it-now-rose
+		background: #b4337f
+		display: none
+	.can-buy-now
+		display: block
+		line-height: 16px
+		font-size: 12px
+		margin-top: 15px
+		color: #55534c
+		text-align: center
+	.Luxury
+		display: none
+		font-size: 24px
+		color: #545145
+		line-height: 26px
+		margin-bottom: 14px
+	.Premium-seller
+		display: none
+		font-size: 12px
+		line-height: 1.1
+		color: #674c1b
+		padding: 6px 8px 5px
+		min-width: -121px
+		margin-bottom: 10px
+		+border-radius(5px)
+		background: #deb770
+		background: -moz-linear-gradient(to bottom, #deb770, #d8ab61)
+		background: -webkit-linear-gradient(to bottom, #deb770, #d8ab61)
+		background: -o-linear-gradient(to bottom,#deb770, #d8ab61)
+		background: -ms-linear-gradient(to bottom, #deb770, #d8ab61)
+		background: linear-gradient(to bottom, #deb770, #d8ab61)
+		&:before
+			+font-icon("crown")
+			display: inline-block
+			vertical-align: middle
+			color: #7f5f27
+			margin-right: 8px
+	.Trusted-seller
+		display: none
+		padding: 6px 8px 5px
+		min-width: -121px
+		margin-bottom: 10px
+		font-size: 12px
+		line-height: 1.1
+		+border-radius(5px)
+		color: #666769
+		background: #e5e5e5
+		background: -moz-linear-gradient(to bottom, #e5e5e5, #dbdbdb)
+		background: -webkit-linear-gradient(to bottom, #e5e5e5, #dbdbdb)
+		background: -o-linear-gradient(to bottom,#e5e5e5, #dbdbdb)
+		background: -ms-linear-gradient(to bottom, #e5e5e5, #dbdbdb)
+		background: linear-gradient(to bottom, #e5e5e5, #dbdbdb)
+		&:before
+			+font-icon("medal")
+			display: inline-block
+			vertical-align: middle
+			color: #666769
+			margin-right: 8px
+	.US-New-York
+		display: none
+		font-size: 16px
+		color: #7f7864
+		margin-top: 10px
+		.US-New-York-img
+			display: inline-block
+			border: 1px solid rgba(#e1d2a2, 0.4)
+			margin-right: 20px
+			padding: 1px
+			img
+				display: block
+	.cannot-buy-now
+		display: none
+	.This-product
+		display: none
+		color: #666666
+		font-size: 14px
+		line-height: 18px
+		background: #f0f0f0
+		padding: 10px 10px 10px 60px
+		position: relative
+		&:before
+			+font-icon("arrows")
+			position: absolute
+			left: 12px
+			font-size: 29px 
+			color: #9a9a9a
+			transform: rotate(180deg)
+			top: 50%
+			margin-top: -9px
+	.auction-price
+		font-size: 15px
+		color: #928e80
+		line-height: 17px
+
+.bids-container
+	position: absolute
+	left: 0
+	width: 100%
+	+opacity(0)
+	top: 93px
+	max-height: 0
+	overflow: hidden
+	+transition(0.45s)
+	background: #fff
+	+box-shadow(0px 1px 5px 0px rgba(95,80,89,0.3))
+	table
+		width: 100%
+	thead
+		tr 
+			border-bottom: 2px solid #f5f4f2
+	tr 
+		border-bottom: 1px solid #f5f4f2
+		// padding: 0 40px
+	th,td
+		padding: 15px 0px 10px
+		font-size: 14px
+		color: #30242b
+		padding-left: 40px
+	th 
+		color: #545454
+		line-height: 1
+		// &:first-child
+	.bids-name
+		color: #553447
+	.bids-price
+		font-weight: bold
+.bids-open
+	.bids-container
+		+opacity(1)
+		max-height: 600px
+		z-index: 2
+
+.auction-sale-bottom
+	background: #fdfaee
+	color: #7f7864
+	font-size: 14px
+	line-height: 20px
+	display: none
+	p
+		position: relative
+		padding: 20px 20px 20px 120px
+		&:before
+			+font-icon("circle")
+			display: inline-block
+			font-size: 50px
+			line-height: 50px
+			color: #e9e6d9
+			position: absolute
+			left: 45px
+			top: 19px
+.seling
+	.buy-it-now-rose
+		display: block
+	.timer-sell
+		display: none
+	label
+		display: none
+	input[type="submit"]
+		display: none
+	.automatic-bid
+		display: none
+	.auction-sale-bottom
+		display: block
+	.sell-buy-l
+		background: #fef4d5
+		.buy-price
+			display: block
+	.sell-buy-r
+		background: #fdfcf7
+		.buy-it-now
+			display: none
+		.buy-price
+			display: none
+	.buy-price
+		background: transparent
+		text-align: left
+		padding-top: 0
+		padding-bottom: 50px
+		line-height: 26px
+	.buy-seller
+		display: block
+	.Luxury
+		display: block
+	
+	.can-buy-now
+		display: none
+	.Premium-seller
+		display: inline-block
+	.Trusted-seller
+		display: inline-block
+	.US-New-York
+		display: block
+
+.auction-selling
+	.sell-buy
+		.buy-it-now
+			background: #9a9a9a
+			pointer-events: none
+	.can-buy-now
+		display: none
+	.cannot-buy-now
+		display: block
+	.sell-buy-r
+		.buy-price
+			display: none
+	.This-product
+		display: block
+
+
+.services
+	background: #f7f7f7
+	padding: 35px 0 25px
+	box-sizing: border-box
+	+pie-clearfix
+	.services-l
+		float: left
+		width: 50%
+		+box-sizing(border-box)
+		padding: 11px 35px
+		border-right: 1px solid rgba(#e0e0e0, 0.75)
+		p 
+			display: inline-block
+			position: relative
+			padding: 12px 20px 11px 40px
+			font-size: 14px
+			line-height: 20px
+			color: #ba5991
+			background: #f1e7ed
+			text-transform: uppercase
+			margin-left: 25px
+			+border-radius(0px 5px 5px 0px)
+			cursor: pointer
+			&:before
+				+font-icon("favorite")
+				position: absolute
+				top: -3.5px
+				left: 0
+				+border-radius(100%)
+				background: #ba5991
+				padding: 18px 16px 14px
+				font-size: 18px
+				line-height: 18px
+				color: #fff
+				margin-left: -25px
+
+	.services-r
+		float: right
+		width: 50%
+		+box-sizing(border-box)
+		padding: 0 35px
+		z-index: 0
+		line-height: 0
+		position: relative
+	.services-r-item
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		width: 31%
+		cursor: pointer
+		&:before
+			color: #ba5991
+		&:hover
+			h4
+				color: #a4236e
+			&:before
+				color: #a4236e
+		&.active
+			h4
+				color: #a4236e
+				&:before
+					color: #a4236e
+			.services-r-item-text
+				+opacity(1)
+				padding: 25px
+				max-height: 500px
+		h4
+			font-size: 12px
+			color: #ba5991
+			line-height: 14px
+			&:before
+				color: #ba5991
+				
+	.world
+		&:before
+			+font-icon("world")
+			display: block
+			font-size: 40px
+			margin-bottom: 5px
+			line-height: 1.1
+	.baggage
+		&:before
+			+font-icon("baggage")
+			display: block
+			font-size: 40px
+			margin-bottom: 5px
+			line-height: 1.1
+	.travel
+		&:before
+			+font-icon("business")
+			display: block
+			font-size: 40px
+			margin-bottom: 5px
+			line-height: 1.1
+	.inactive
+		pointer-events: none
+		h4
+			color: #ababab !important
+		&:before
+			color: #ababab !important
+	.services-r-item-text
+		box-sizing: border-box
+		+box-shadow(0px 1px 5px 0px rgba(95,80,89,0.67))
+		position: absolute
+		z-index: 1
+		padding: 0 25px
+		width: -186px
+		right: 0
+		top: 91px
+		width: 280px
+		text-align: left
+		background: #fff
+		+opacity(0)
+		max-height: 0
+		overflow: hidden
+		+transition(0.5s)
+		h5
+			display: block
+			font-size: 18px
+			color: #494949
+			line-height: 18px
+			font-weight: bold
+			margin-bottom: 12px
+		span
+			display: block
+			font-size: 14px
+			color: #2f2f2f
+			line-height: 17px
+			margin-bottom: 4px
+		p
+			color: #787878
+			font-size: 14px
+			line-height: 17px
+			margin-bottom: 20px
+			display: block
+			&:last-child
+				margin-bottom: 0
+
+
+	
+
+.content-menu
+	border-bottom: 1px solid rgba(#272326, 0.25)
+	// text-align: center
+	padding: 23px 40px 20px
+	li
+		display: inline-block
+		margin: 0 30px
+		&:first-child
+			margin-left: 0
+	a 
+		color: #5e4d57
+		font-size: 16px
+		line-height: 20px
+
+.main-content-text
+	padding: 45px 40px
+	border-bottom: 1px solid rgba(#272326, 0.25)
+	h4
+		display: block
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase
+		color: #be6799
+		margin-top: 15px
+		margin-bottom: 35px
+		font-weight: bold
+		letter-spacing: 0.08em
+		&:before
+			display: inline-block
+			vertical-align: middle
+			font-size: 16px
+			color: #ba5991
+			margin-right: 10px
+	p
+		display: block
+		font-size: 15px
+		line-height: 24px
+		letter-spacing: 0.08em
+		color: #181818
+.Description
+	&:before
+		+font-icon("comment")
+	
+
+	
+
+
+
+
+
+
+
+
+
+
